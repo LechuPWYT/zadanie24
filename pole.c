@@ -35,9 +35,30 @@ void kolo() {
 }
 int main(void)
 {
+int wybor;
+printf("====================menu=====================\n");
+    printf("1------Oblicz pole prostokata\n");
+    printf("2------Oblicz pole kuli\n");
+    printf("0------Wyjscie\n");
+    scanf("%d", &wybor);
 
-//prostokat();
-kolo();
+switch (wybor)
+    {
+
+
+case 1:
+    prostokat();
+    break;
+case 2:
+    kolo();
+    break;
+case 0:
+    return 0;
+    break;
+default:
+     printf("Prosze wybrac odpowiednia opcje");
+     break;
+    }
     return 0;
 
 }
