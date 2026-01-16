@@ -1,9 +1,12 @@
 
 #include <stdio.h>
 
-int main(void)
-{
-    float a, b;
+float pole_prostokata(float a,float b) {
+return a*b;
+}
+
+void prostokat() {
+ float a, b;
     float pole;
 
     printf("Podaj dlugosc boku a: ");
@@ -12,10 +15,14 @@ int main(void)
     printf("Podaj dlugosc boku b: ");
     scanf("%f", &b);
 
-    pole = a * b;
+    pole = pole_prostokata(a,b);
 
     printf("Pole prostokata wynosi: %.2f\n", pole);
+}
+int main(void)
+{
 
+prostokat();
     return 0;
 
 }
